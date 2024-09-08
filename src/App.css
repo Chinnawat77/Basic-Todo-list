@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    font-family: "Sriracha", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+body{
+    background: #333;
+    display: flex;
+    justify-content: center;
+}
+
+.Todo-Wrapper{
+    background: #C8A1E0;
+    /* border: 1px solid lack; */
+    width: 420px;
+    height: 520px;
+    display: flex;
+    padding: 20px 0px;
+    margin-top: 20px;
+    border-radius: 20px;
+    flex-direction: column;
+    align-items: center;
+    overflow: auto;
+    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+.Todo-Wrapper h1{
+    color: white;
+}
+
+.Todo-Wrapper::-webkit-scrollbar{
+    width: 0px;
+}
+
+.Todo-Form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Todo-Input{
+    outline: none;
+    border: none;
+    width: 100%;
+    font-size: 20px;
+    font-weight: bolder;
+    border-radius: 5px;
+    padding: 8px 2px;
+}
+
+.Add-btn{
+    background-color: rgb(95, 209, 95);
+    font-weight: bolder;
+    border: none;
+    padding: 10px 10px;
+    border-radius: 10px;
+    font-size: 15px;
+    cursor: pointer;
+    color: #fff;
+    margin-left: 10px;
+    transition-duration: 0.5s;
+    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+.Add-btn:hover{
+    color: rgb(96, 224, 96);
+}
+.Add-btn:active{
+    transform: scale(0.9);
+}
+.Todo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Text{
+    width: 250px;
+    font-size: 25px;
+    margin-top: 10px;
+    font-weight: bolder;
+    padding: 5px;
+    border-radius: 10px;
+    color: #EEEEEE;
+    background: #674188;
+    justify-content: center;
+    display: flex;
+    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.5);
+    transition-duration: 0.7s;
+}
+
+.Text:hover{
+    background: #E2BFD9;
+    color: black;
+    transform: scale(1.1);
+    
+}
+
+.edit-btn{
+    font-size: 30px;
+    cursor: pointer;
+    color: black;
+    margin-left: 20px;
+    transition-duration: 0.7s;
+}
+
+.edit-btn:hover{
+    color: rgb(95, 235, 95);
+}
+
+.remove-btn{
+    font-size: 30px;
+    cursor: pointer;
+    color: black;
+    margin-left: 10px;
+    transition-duration: 0.7s;
+    transform: scale(1.1);
+}
+
+.remove-btn:hover{
+    color: rgb(240, 54, 54);
+    transform: scale(1.1);
+}
